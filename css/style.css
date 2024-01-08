@@ -550,7 +550,7 @@ span {
   }
   .nav-menu {
     position: fixed;
-    top: -1000px;
+    top: -100%;
     right: 0px;
     height: 90vh;
     width: 100%;
