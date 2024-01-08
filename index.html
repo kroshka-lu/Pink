@@ -12,6 +12,12 @@
 <body>
     <!-- первая секция -->
     <section class="main-section">
+        <!-- меню гамбургер -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <!-- навигационное меню -->
         <div class="container main-section__nav-container">
             <!-- логотип -->
@@ -20,6 +26,21 @@
             </header>
             <!-- меню -->
             <nav class="main-section__nav nav-menu">
+                <!-- разделительные линии в мобильной версии-->
+                <div class="nav-menu__lines-black"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-menu__lines-grey">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- пункты меню -->
                 <ul class="nav-menu__list">
                     <li class="nav-menu__list-item"><a href="#">Главная</a></li>
                     <li class="nav-menu__list-item"><a href="#">Фотографии</a></li>
@@ -116,14 +137,14 @@
                 <!-- контейнер для правой части таблицы -->
                 <div class="fourth-section__right-wrapper">
                     <!-- второй столбец -->
-                    <div class="fourth-section__table-item table-item">
+                    <div class="fourth-section__table-item table-item table-item_1"> <!-- //////////////table-item_1 для моб.версии -->
                         <div class="table-item__cell table-item__cell_title"> <span class="fourth-section__span"> БАЗА <br> </span> 1,99 USD</div>
                         <div class="table-item__cell"><img src="icons/yes.svg" alt="yes"></div>
                         <div class="table-item__cell"><img src="icons/no.svg" alt="no"></div>
                         <div class="table-item__cell"><img src="icons/no.svg" alt="no"></div>
                     </div>
                     <!-- третий столбец -->
-                    <div class="fourth-section__table-item table-item"> 
+                    <div class="fourth-section__table-item table-item table-item_2"> <!-- /////////////////table-item_2 для моб.версии -->
                         <div class="table-item__cell table-item__cell_title"> <span class="fourth-section__span"> СТАНДАРТ <br> </span> 3,99 USD</div>
                         <div class="table-item__hit">ХИТ</div>
                         <div class="table-item__cell"><img src="icons/yes.svg" alt="yes"></div>
@@ -131,7 +152,7 @@
                         <div class="table-item__cell"><img src="icons/no.svg" alt="no"></div>
                     </div>
                     <!-- четвертый столбец -->
-                    <div class="fourth-section__table-item table-item">
+                    <div class="fourth-section__table-item table-item table-item_3"> <!-- ///////////////table-item_3 для моб.версии -->
                         <div class="table-item__cell table-item__cell_title"> <span class="fourth-section__span"> АНЛИМ <br> </span> 9,99 USD</div>
                         <div class="table-item__cell"><img src="icons/yes.svg" alt="yes"></div>
                         <div class="table-item__cell"><img src="icons/yes.svg" alt="yes"></div>
@@ -149,8 +170,8 @@
             <!-- контакты -->
             <div class="fifth-section__block-text">
                 <p class="fifth-section__text"><span class="fifth-section__span"> Звоните: <br><br> </span> +7 (812) 555-66-66</p>
-                <p class="fifth-section__text"><span class="fifth-section__span"> Приезжайте в гости: <br><br> </span> ул. Большая <br> Конюшенная, 19/8</p>
-                <p class="fifth-section__text"><span class="fifth-section__span">Пишите: <br><br> </span> mail@htmlacademy.ru</p>
+                <p class="fifth-section__text fifth-section__text_address"><span class="fifth-section__span"> Приезжайте в гости: <br><br> </span> ул. Большая <br> Конюшенная, 19/8</p>
+                <p class="fifth-section__text fifth-section__text_mail"><span class="fifth-section__span">Пишите: <br><br> </span> mail@htmlacademy.ru</p>
             </div>
             <!-- карта -->
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad77443084f5a7b2115dc65de3d6169a67d0a7d7b6011836dab9123a4c5afbab4&amp;source=constructor" width="100%" height="502" frameborder="0"></iframe>
@@ -160,7 +181,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <!-- логотип -->
-            <a href="#"><img src="icons/logotype-blue-desktop.svg" alt="логотип"></a>
+            <a href="#"><img class="footer__logo" src="icons/logotype-blue-desktop.svg" alt="логотип"></a>
             <!-- иконки -->
             <div class="footer__icons-box">
                 <div class="footer__icons-item"><a href="#"><img src="icons/twitter.svg" alt="твиттер"></a></div>
@@ -174,5 +195,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
